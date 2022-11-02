@@ -90,12 +90,17 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "Proy_Int_RRH/node_modules/bootstrap/dist/css/bootstrap.css",
+              "Proy_Int_RRH/node_modules/bootstrap/dist/js/bootstrap.js"
             ],
             "scripts": []
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

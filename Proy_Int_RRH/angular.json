@@ -91,10 +91,11 @@
             ],
             "styles": [
               "src/styles.css",
-              "Proy_Int_RRH/node_modules/bootstrap/dist/css/bootstrap.css",
-              "Proy_Int_RRH/node_modules/bootstrap/dist/js/bootstrap.js"
+              "Proy_Int_RRH/node_modules/bootstrap/dist/css/bootstrap.css"
             ],
-            "scripts": []
+            "scripts": [
+              "Proy_Int_RRH/node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           }
         }
       }

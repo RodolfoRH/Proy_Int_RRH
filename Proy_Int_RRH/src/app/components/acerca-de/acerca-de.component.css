@@ -1,4 +1,45 @@
-#FotoPerfil{
-  height: 300px;
-  width: 300px;
+.row{
+  padding: 25px;
+}
+div{
+  background-color: rgb(83, 167, 236);
+  text-align: center;
+}
+@media (min-width: 576px){
+  #FOTO{
+    width: 25%;
+    border-radius: 30%;
+    box-shadow: 3px;
+    border-color: blue;
+    position:absolute;
+    opacity: 80%;
+    left: 2%;
+    top: 475px;
+  }
+}
+/* Pantalla mínima*/
+@media (max-width: 575px){
+  #FOTO{
+    width: 50%;
+    border-radius: 30%;
+    box-shadow: 3px;
+    border-color: blue;
+    position:absolute;
+    opacity: 80%;
+    left: 25%;
+    top: 475px;
+  }
+}
+
+#FOTO:hover{
+  opacity: 100%;
+}
+
+#nombre{
+  font-size: xx-large;
+  font-weight: bolder;
+}
+#cargo{
+  font-style: italic;
+  font-size:larger;
 }

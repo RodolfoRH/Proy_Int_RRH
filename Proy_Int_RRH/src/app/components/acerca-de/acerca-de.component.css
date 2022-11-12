@@ -1,16 +1,13 @@
-.row{
-  padding: 25px;
-}
-div{
-  background-color: rgb(83, 167, 236);
-  text-align: center;
+.container{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: darkgray;
 }
 @media (min-width: 576px){
   #FOTO{
     width: 25%;
     border-radius: 30%;
     box-shadow: 3px;
-    border-color: blue;
     position:absolute;
     opacity: 80%;
     left: 2%;

@@ -1,7 +1,13 @@
 
 .row{
 padding: 3px;
-  height: 120px;
+}
+
+#logoAPchico{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 }
 
 #colStatus{

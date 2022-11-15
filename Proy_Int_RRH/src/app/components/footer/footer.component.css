@@ -4,5 +4,5 @@ footer{
   display: flex;
   flex-direction: column;
   text-align: center;
-  box-shadow: 3px -3px 5px rgb(138, 133, 133);
+  box-shadow: -1px -3px 5px rgb(138, 133, 133);
 }

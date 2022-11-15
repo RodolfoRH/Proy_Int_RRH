@@ -10,9 +10,12 @@
 .parte1, .parte2{
   display: inline-block;
   text-align: justify;
+  align-items: center;
 }
 
 .imgDemo{
 box-shadow: 15px 15px 15px rgb(29, 22, 22);
-
+display: flex;
+align-items: center;
+text-align: center;
 }

@@ -1,14 +1,30 @@
 .container{
   padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: rgb(190, 190, 190);
+  align-items: center;
+  justify-content: center;
+
 }
 
+
+
+
+#colNombre{
+  display:block ;
+  align-items: center;
+  justify-content: center;
+}
 
 #FOTO{
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 30px;
+  box-shadow: 5px 5px 15px black;
+  opacity: 80%;
 }
 
 
@@ -17,14 +33,25 @@
   opacity: 100%;
 }
 
+
+
 #nombre{
-  font-size: xx-large;
+  display: flex;
+  font-size: x-large;
   font-weight: bolder;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
 #cargo{
+  display: flex;
   font-style: italic;
   font-size:larger;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
 }
+
 
 /*
 @media (min-width: 768px){

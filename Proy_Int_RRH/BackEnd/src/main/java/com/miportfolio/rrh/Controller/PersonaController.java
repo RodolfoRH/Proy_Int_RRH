@@ -17,42 +17,44 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
 public class PersonaController {
-    @Autowired IPersonaService IPersonaService;
+
+    @Autowired
+    IPersonaService IPersonaService;
+
     @GetMapping("/personas/traer")
-    public List<Persona> getPersona(){
+    public List<Persona> getPersona() {
         return IPersonaService.getPersona();
     }
 
     @PostMapping("/personas/crear")
-    public String createPersona(@RequestBody Persona persona){
+    public String createPersona(@RequestBody Persona persona) {
         IPersonaService.savePersona(persona);
         return "El usuario se creó correctamente";
     }
-    
+
     @DeleteMapping("/personas/borrar/{id}")
-    public String deletePersona(@PathVariable Long id){
-    IPersonaService.deletePersona(id);
-    return "El usuario se eliminó correctamente";
-}
- 
-    
+    public String deletePersona(@PathVariable Long id) {
+        IPersonaService.deletePersona(id);
+        return "El usuario se eliminó correctamente";
+    }
+
     @PutMapping("/personas/editar/{id}")
-    public Persona editPersona (@PathVariable Long id,
-                                @RequestParam("nombre") String nuevoNombre,
-                                @RequestParam("apellido") String nuevoApellido,
-                                @RequestParam("img") String nuevoImg){
-        
+    public Persona editPersona(@PathVariable Long id,
+            @RequestParam("nombre") String nuevoNombre,
+            @RequestParam("apellido") String nuevoApellido,
+            @RequestParam("img") String nuevoImg) {
+
         Persona persona = IPersonaService.findPersona(id);
         persona.setNombre(nuevoNombre);
         persona.setApellido(nuevoApellido);
         persona.setImg(nuevoImg);
-        
+
         IPersonaService.savePersona(persona);
-               return persona;
+        return persona;
     }
-    
+
     @GetMapping("/personas/traer/perfil")
-    public Persona findPersona(){
-        return IPersonaService.findPersona((long)1);
+    public Persona findPersona() {
+        return IPersonaService.findPersona((long) 1);
     }
 }

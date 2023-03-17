@@ -14,4 +14,6 @@ URL = 'http://localhost:8080/personas/';
   public getPersona(): Observable<persona>{
     return this.http.get<persona>(this.URL+ 'traer/perfil');
   }
+
+
 }

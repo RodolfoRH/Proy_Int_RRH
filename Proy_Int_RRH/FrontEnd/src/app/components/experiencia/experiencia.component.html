@@ -1,12 +1,11 @@
 <div class="container fontArchivo">
-<div class="row">
+<div class="container">  <div class="row">
   <h1>Mis experiencias laborales</h1>
 <div class="col-lg-2">
   <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
   Agregar experiencia
   </button>
 </div>
-
 
   <!--Creo una Table para cargar las experiencias laborales -->
   <div class="col-lg-1"></div>
@@ -16,17 +15,14 @@
         <tr *ngFor="let Jobs of varExp">
           <td>{{Jobs.nombreExp}}</td>
           <td>{{Jobs.descripcionExp}}</td>
-          <td>Editar</td>
+          <td><i class="bi bi-pencil"></i> Editar</td>
           <td>Eliminar</td>
         </tr>
       </tbody>
     </table>
   </div>
   <div class="col-lg-1"></div>
-
-
-
-
-
-
 </div>
+
+
+

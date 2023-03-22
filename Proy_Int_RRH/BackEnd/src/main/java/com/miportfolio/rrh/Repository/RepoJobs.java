@@ -9,6 +9,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface RepoJobs extends JpaRepository<Jobs, Integer>{
-    public Optional<Jobs> findByNombreExp (String nombreExp);
+    public Optional<Jobs> findByNombreExp(String nombreExp);
     public boolean existsByNombreExp(String nombreExp);
 }

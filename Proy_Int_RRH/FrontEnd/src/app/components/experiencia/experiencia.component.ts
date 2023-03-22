@@ -25,6 +25,22 @@ export class ExperienciaComponent implements OnInit {
         }
   }
 
+  //Borrar Experiencia laboral
+deleteJob(id?: number){
+  if(id != undefined){
+    this.ServiceJobs.delete(id).subscribe(
+      data =>{
+        this.cargarExperiencia();
+      }, err =>{
+        alert("Error al eliminar la experiencia seleccionada");
+      }
+    )
+  }
+}
+
+
+
+
 //Método para cargar una nueva experiencia laboral en el componente "Experiencia"
   cargarExperiencia(): void{
     this.ServiceJobs.lista().subscribe(data => {this.varExp = data; })

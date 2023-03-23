@@ -1,4 +1,4 @@
-
+<br>
 <div class="container fontArchivo">
   <h1>Mis estudios cursados</h1>
 <div class="col-lg-2">
@@ -19,7 +19,7 @@
         <tr *ngFor="let Education of educacion">
           <td>{{Education.nombreEdu}}</td>
           <td>{{Education.descripcionEdu}}</td>
-          <td *ngIf="isLogged"><button class="btn btn-outline-info btn-sm" routerLink="edu/{{Education.id}}" data-toggle="tooltip" data-placement="top" title="Editar"><i class="bi bi-pencil" ></i></button></td>
+          <td *ngIf="isLogged"><button class="btn btn-outline-primary btn-sm" routerLink="edu/{{Education.id}}" data-toggle="tooltip" data-placement="top" title="Editar"><i class="bi bi-pencil" ></i></button></td>
           <td *ngIf="isLogged"><button class="btn btn-outline-danger btn-sm" (click)="deleteEdu(Education.id)" data-toggle="tooltip" data-placement="top" title="Borrar"><i class="bi bi-trash3"></i></button></td>
         </tr>
       <br>

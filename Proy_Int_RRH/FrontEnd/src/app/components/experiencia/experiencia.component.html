@@ -19,7 +19,7 @@
         <tr *ngFor="let Jobs of varExp">
           <td>{{Jobs.nombreExp}}</td>
           <td>{{Jobs.descripcionExp}}</td>
-          <td *ngIf="isLogged"><button class="btn btn-outline-info btn-sm" routerLink="jobs/{{Jobs.id}}" data-toggle="tooltip" data-placement="top" title="Editar"><i class="bi bi-pencil"></i></button></td>
+          <td *ngIf="isLogged"><button class="btn btn-outline-primary btn-sm" routerLink="jobs/{{Jobs.id}}" data-toggle="tooltip" data-placement="top" title="Editar"><i class="bi bi-pencil"></i></button></td>
           <td *ngIf="isLogged"><button class="btn btn-outline-danger btn-sm" (click)="deleteJob(Jobs.id)" data-toggle="tooltip" data-placement="top" title="Borrar"><i class="bi bi-trash3"></i></button></td>
         </tr>
       <br>

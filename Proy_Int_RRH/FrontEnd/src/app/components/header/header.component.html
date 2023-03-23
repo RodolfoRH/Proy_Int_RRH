@@ -5,7 +5,7 @@
     <img src="../../../assets/Logos/APLogo-20-20-Negro.png" width="150px" height="auto" class="img-fluid mx-auto d-block">
   </div>
 
-  <div class="col-xs-12 col-sm-4" id="colStatus">
+  <div class="col-sm-3" id="colStatus">
 
     <h6 *ngIf="!isLogged">Estás navegando como Invitado</h6>
     <h6 *ngIf="isLogged">Estás logueado</h6>
@@ -16,7 +16,7 @@
     <button id="btnLogin" type="button" class="btn btn-primary" (click)="onLogOut()" *ngIf="isLogged">Salir</button>
   </div>
 
-  <div class="col-xs-12 col-sm-3" id="redes">
+  <div class="col-sm-3" id="redes">
     <app-redes></app-redes>
   </div>
 

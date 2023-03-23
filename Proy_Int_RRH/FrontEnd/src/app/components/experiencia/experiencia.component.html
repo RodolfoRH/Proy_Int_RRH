@@ -1,29 +1,30 @@
+
 <div class="container fontArchivo">
-<div class="container">  <div class="row">
   <h1>Mis experiencias laborales</h1>
 <div class="col-lg-2">
   <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
   Agregar experiencia
   </button>
+<br>
 </div>
 
   <!--Creo una Table para cargar las experiencias laborales -->
-  <div class="col-lg-1"></div>
-    <div class="col-lg-10">
-      <table class="table">
+    <div class="col-12">
+      <table class="table table-hover text-left">
+        <col style="width:25%">
+        <col style="width:65%">
+        <col style="width:5%">
+        <col style="width:5%">
       <tbody>
         <tr *ngFor="let Jobs of varExp">
           <td>{{Jobs.nombreExp}}</td>
           <td>{{Jobs.descripcionExp}}</td>
-          <td *ngIf="isLogged"><button class="btn btn-outline-info" routerLink="jobs/{{Jobs.id}}"><i class="bi bi-pencil"></i> Editar</button></td>
-          <td *ngIf="isLogged"><button class="btn btn-outline-danger" (click)="deleteJob(Jobs.id)"><i class="bi bi-trash3"></i> Eliminar</button></td>
-
+          <td *ngIf="isLogged"><button class="btn btn-outline-info btn-sm" routerLink="jobs/{{Jobs.id}}" data-toggle="tooltip" data-placement="top" title="Editar"><i class="bi bi-pencil"></i></button></td>
+          <td *ngIf="isLogged"><button class="btn btn-outline-danger btn-sm" (click)="deleteJob(Jobs.id)" data-toggle="tooltip" data-placement="top" title="Borrar"><i class="bi bi-trash3"></i></button></td>
         </tr>
+      <br>
       </tbody>
     </table>
   </div>
-  <div class="col-lg-1"></div>
-</div>
-
 
 

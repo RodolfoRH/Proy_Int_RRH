@@ -1,14 +1,32 @@
-
-<div class="container fontArchivo">
-  <h1>Mis estudios cursados</h1>
-<div class="col-lg-2">
-  <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
-  Agregar Estudios
-  </button>
 <br>
-</div>
+<div class="container fontArchivo">
 
-  <!--Creo una Table para cargar los estudios -->
+<div class="container">
+    <div class="row">
+      <div class="col-9">
+        <h2><u>Mis estudios cursados</u></h2>
+      </div>
+      <div class="col-3" id="divBtnAgregar">
+  <button type="button" class="btn btn-dark" routerLink="/nuevaedu" *ngIf="isLogged">
+  Agregar estudio
+  </button>
+</div>
+</div>
+<br>
+
+<div class="table-responsive">
+  <table class="table fst-italic" >
+  <thead>
+    <tr>
+      <th scope="col" style="width:25%">Institución</th>
+      <th scope="col" style="width:65%">Descripción de estudios cursados</th>
+      <th scope="col" style="width:5%">Editar</th>
+      <th scope="col" style="width:5%">Borrar</th>
+    </tr>
+  </thead>
+</table>
+
+  <!--Aquí cargo los estudios -->
     <div class="col-12">
       <table class="table table-hover text-left">
         <col style="width:25%">
@@ -19,10 +37,10 @@
         <tr *ngFor="let Education of educacion">
           <td>{{Education.nombreEdu}}</td>
           <td>{{Education.descripcionEdu}}</td>
-          <td *ngIf="isLogged"><button class="btn btn-outline-info btn-sm" routerLink="edu/{{Education.id}}" data-toggle="tooltip" data-placement="top" title="Editar"><i class="bi bi-pencil" ></i></button></td>
+          <td *ngIf="isLogged"><button class="btn btn-outline-primary btn-sm" routerLink="edu/{{Education.id}}" data-toggle="tooltip" data-placement="top" title="Editar"><i class="bi bi-pencil" ></i></button></td>
           <td *ngIf="isLogged"><button class="btn btn-outline-danger btn-sm" (click)="deleteEdu(Education.id)" data-toggle="tooltip" data-placement="top" title="Borrar"><i class="bi bi-trash3"></i></button></td>
         </tr>
-      <br>
       </tbody>
     </table>
   </div>
+</div>

@@ -15,13 +15,13 @@
 <br>
 
 <div class="table-responsive">
-<table class="table fst-italic">
+<table class="table fst-italic" >
   <thead>
     <tr>
       <th scope="col" style="width:25%">Compañía</th>
       <th scope="col" style="width:65%">Descripción del puesto</th>
-      <th scope="col" style="width:5%">Editar</th>
-      <th scope="col" style="width:5%">Borrar</th>
+      <th scope="col" style="width:5%" *ngIf="isLogged">Editar</th>
+      <th scope="col" style="width:5%" *ngIf="isLogged">Borrar</th>
     </tr>
   </thead>
 </table>

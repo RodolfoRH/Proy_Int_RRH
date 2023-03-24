@@ -20,8 +20,8 @@
     <tr>
       <th scope="col" style="width:25%">Institución</th>
       <th scope="col" style="width:65%">Descripción de estudios cursados</th>
-      <th scope="col" style="width:5%">Editar</th>
-      <th scope="col" style="width:5%">Borrar</th>
+      <th scope="col" style="width:5%" *ngIf="isLogged">Editar</th>
+      <th scope="col" style="width:5%" *ngIf="isLogged">Borrar</th>
     </tr>
   </thead>
 </table>

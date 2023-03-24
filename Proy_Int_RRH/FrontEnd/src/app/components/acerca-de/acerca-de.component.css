@@ -38,7 +38,7 @@
 
 #nombre{
   display: flex;
-  font-size: x-large;
+
   font-weight: bolder;
   align-content: center;
   align-items: center;
@@ -47,7 +47,7 @@
 #cargo{
   display: flex;
   font-style: italic;
-  font-size:larger;
+  
   align-content: center;
   align-items: center;
   justify-content: center;
@@ -59,7 +59,7 @@
   padding-right: 10px;
   display: flex;
   font-style: italic;
-  font-size:larger;
+
   align-content: center;
   align-items: center;
   justify-content: center;

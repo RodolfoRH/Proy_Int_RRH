@@ -30,3 +30,11 @@ text-align: center;
   justify-content: center;
   box-shadow: 3px 3px 3px rgb(102, 98, 98);
 }
+
+h1{
+  font-family: 'Archivo';font-size: 2rem; font-weight: bold; text-decoration: underline;
+  }
+
+  h2{
+    font-style: italic;
+  }

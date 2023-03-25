@@ -3,8 +3,8 @@
   padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: rgb(85, 85, 85);
-  color: white;
+  background-color: #238C6E;
+  color: black;
   align-items: center;
   justify-content: center;
   box-shadow: 10px 10px 3px rgb(138, 133, 133);
@@ -40,16 +40,15 @@
   display: flex;
 
   font-weight: bolder;
-  align-content: center;
+  align-content: left;
   align-items: center;
   justify-content: center;
 }
 #cargo{
   display: flex;
   font-style: italic;
-  
-  align-content: center;
-  align-items: center;
+  align-content: left;
+  align-self: center;
   justify-content: center;
 }
 
@@ -67,4 +66,5 @@
 
 h3{
 padding-left: 5px;
+text-align: left;
 }

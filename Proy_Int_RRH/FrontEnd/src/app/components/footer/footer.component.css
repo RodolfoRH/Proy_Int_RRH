@@ -4,7 +4,7 @@ footer{
   display: flex;
   flex-direction: column;
   text-align: center;
-  
+
 }
 
 .container{
@@ -12,9 +12,9 @@ footer{
   padding-bottom: 20px;
   padding-left: 10px;
   padding-right: 10px;
-  background-color: rgb(85, 85, 85);
-  color: white;
+  background-color: #F2EEEB;
+  color: black;
   align-items: center;
   justify-content: center;
-
+  box-shadow: 3px 3px 3px rgb(138, 133, 133);
 }

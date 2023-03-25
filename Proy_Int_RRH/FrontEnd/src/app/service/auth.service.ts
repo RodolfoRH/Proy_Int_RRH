@@ -9,7 +9,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'http://localhost:8080/auth/';
+  authURL = 'https://portfoliorrh.onrender.com/auth/';
 
   constructor(private httpClient: HttpClient) { }
 
@@ -19,7 +19,7 @@ export class AuthService {
 
   public login(loginUsuario: LoginUsuario): Observable<jwtDTO>{
     return this.httpClient.post<jwtDTO>(this.authURL + 'login', loginUsuario)
-    
+
   }
 
 

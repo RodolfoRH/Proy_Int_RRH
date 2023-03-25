@@ -7,7 +7,7 @@ import { Jobs } from '../model/jobs';
   providedIn: 'root'
 })
 export class ServiceJobsService {
-  expURL = 'http://localhost:8080/jobs/'
+  expURL = 'https://portfoliorrh.onrender.com/jobs/'
 
   constructor(private httpClient: HttpClient) { }
 

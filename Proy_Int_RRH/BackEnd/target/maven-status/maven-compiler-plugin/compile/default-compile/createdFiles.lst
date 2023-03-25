@@ -4,6 +4,7 @@ com\miportfolio\rrh\Security\Repository\iUsuarioRepository.class
 com\miportfolio\rrh\DTO\dtoEducation.class
 com\miportfolio\rrh\Entity\Education.class
 com\miportfolio\rrh\Security\DTO\NuevoUsuario.class
+com\miportfolio\rrh\WebConfig.class
 com\miportfolio\rrh\Security\DTO\jwtDTO.class
 com\miportfolio\rrh\Security\JWT\jwtEntryPoint.class
 com\miportfolio\rrh\Repository\RepoEducation.class

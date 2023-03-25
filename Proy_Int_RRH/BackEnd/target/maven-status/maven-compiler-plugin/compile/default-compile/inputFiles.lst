@@ -10,6 +10,7 @@ D:\SSD Rodolfo\Documentos\GitHub\Proy_Int_RRH\Proy_Int_RRH\BackEnd\src\main\java
 D:\SSD Rodolfo\Documentos\GitHub\Proy_Int_RRH\Proy_Int_RRH\BackEnd\src\main\java\com\miportfolio\rrh\Security\DTO\jwtDTO.java
 D:\SSD Rodolfo\Documentos\GitHub\Proy_Int_RRH\Proy_Int_RRH\BackEnd\src\main\java\com\miportfolio\rrh\Security\Controller\AuthController.java
 D:\SSD Rodolfo\Documentos\GitHub\Proy_Int_RRH\Proy_Int_RRH\BackEnd\src\main\java\com\miportfolio\rrh\Security\Service\UserDetailsImpl.java
+D:\SSD Rodolfo\Documentos\GitHub\Proy_Int_RRH\Proy_Int_RRH\BackEnd\src\main\java\com\miportfolio\rrh\WebConfig.java
 D:\SSD Rodolfo\Documentos\GitHub\Proy_Int_RRH\Proy_Int_RRH\BackEnd\src\main\java\com\miportfolio\rrh\RrhApplication.java
 D:\SSD Rodolfo\Documentos\GitHub\Proy_Int_RRH\Proy_Int_RRH\BackEnd\src\main\java\com\miportfolio\rrh\Security\Repository\iUsuarioRepository.java
 D:\SSD Rodolfo\Documentos\GitHub\Proy_Int_RRH\Proy_Int_RRH\BackEnd\src\main\java\com\miportfolio\rrh\Security\JWT\jwtEntryPoint.java
